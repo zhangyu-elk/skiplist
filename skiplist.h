@@ -14,7 +14,7 @@ typedef struct skiplist skiplist;
 struct skipnode
 {
 	int				val;
-	skipnode		backward;			//前面的一个指针,链表的指针
+	skipnode		*backward;			//前面的一个指针,链表的指针
 	skipnode		*forward[];			//该节点在多层分别指向的指针
 };
 
